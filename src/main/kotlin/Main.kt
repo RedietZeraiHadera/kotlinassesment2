@@ -35,7 +35,7 @@ fun randonString(name:String){
 //The function returns true/false (7pts)
 fun password(pass:String):String{
 
-if(8<=pass.length<=16&&pass!="password"&&pass.contains(Int)){
+if((8 <= pass.length <= 16) && (pass != "password") && (pass.contains(Int))){
 return "valid"
 }
     else{
@@ -101,8 +101,9 @@ class SavingAccount(accountNumber:Int, accountName:String, balance:Double, var w
         var amount = balance
         if (withdrawals < 4) {
             balance -= amount
+            withdrawals++
+
         }
-        withdrawals++
     }
 
 }
