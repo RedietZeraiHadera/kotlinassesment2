@@ -17,10 +17,12 @@ fun main(){
 //whether it begins with a vowel or not. (6pts)
 data class Random(var first:Char, var last:Char, var length:Int, var begin:Boolean)
 fun randonString(name:String){
- var name = "Rediet"
     var first = name[0]
+    var last = name.lastIndex
     var length = name.length
-    var vowel =
+    var begin = name.startsWith("a","e","i","o","u","A","E","O","I","U")
+
+
 }
 
 //Create a function that takes in a password as a parameter. For a password to
